@@ -113,11 +113,7 @@ kor_ticker['기준일'] = pd.to_datetime(kor_ticker['기준일'])
 kor_ticker.head()
 
 
-con = pymysql.connect(user='heoheon',
-                      passwd='Qhdks5743812!',
-                      host='heoheon.synology.me',
-                      db='stock_db',
-                      charset='utf8')
+
 
 mycursor = con.cursor()
 
@@ -173,11 +169,7 @@ kor_sector = kor_sector[['IDX_CD', 'CMP_CD', 'CMP_KOR', 'SEC_NM_KOR']]
 kor_sector['기준일'] = biz_day
 kor_sector['기준일'] = pd.to_datetime(kor_sector['기준일'])
 
-con = pymysql.connect(user='heoheon',
-                      passwd='Qhdks5743812!',
-                      host='heoheon.synology.me',
-                      db='stock_db',
-                      charset='utf8')
+
 
 mycursor = con.cursor()
 
